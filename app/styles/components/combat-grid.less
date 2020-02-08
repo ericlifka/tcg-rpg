@@ -1,0 +1,33 @@
+.combat-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .board {
+    display: flex;
+    flex-direction: column;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .end-zone {
+      height: 50px;
+      border: 1px solid @black;
+      margin: 5px;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+    }
+
+    .square {
+      width: 100px;
+      height: 100px;
+      border: 1px solid @black;
+      margin: 5px;
+    }
+  }
+}

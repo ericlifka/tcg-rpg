@@ -1,0 +1,36 @@
+.combat-view {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+
+  .center-stage {
+    width: 600px;
+    flex-grow: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    .combat-grid {
+      flex-grow: 1;
+    }
+  }
+
+  .sidebar {
+    flex-grow: 1;
+    border-left: 2px solid @black;
+    display: flex;
+    flex-direction: column;
+
+    .mana-display {
+      order: 0;
+      flex-grow: 1;
+    }
+
+    .player-hand {
+      order: 1;
+      height: 200px;
+      flex-grow: 0;
+      border-top: 2px solid @black;
+    }
+  }
+}

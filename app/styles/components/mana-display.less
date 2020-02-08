@@ -1,0 +1,41 @@
+.mana-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: grey;
+
+  .display-box {
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+    transform: rotate(45deg);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.09);
+  }
+
+  .mana {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      font-style: normal;
+      transform: rotate(-45deg);
+    }
+
+    &.fire {
+      background-color: @fire;
+    }
+    &.nature {
+      background-color: @nature;
+    }
+    &.water {
+      background-color: @water;
+    }
+    &.air {
+      background-color: @air;
+    }
+  }
+}

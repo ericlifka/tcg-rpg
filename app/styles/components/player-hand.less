@@ -1,0 +1,43 @@
+.player-hand {
+  display: flex;
+  padding: 5px;
+
+  .card {
+    margin: 5px;
+    box-shadow: 0 0 2px 0 #ccc;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+
+    &.nature {
+      .header, .footer { background-color: @nature; }
+    }
+    &.fire {
+      .header, .footer { background-color: @fire; }
+    }
+    &.water {
+      .header, .footer { background-color: @water; }
+    }
+    &.air {
+      .header, .footer { background-color: @air; }
+    }
+
+    .header {
+      padding: 5px;
+    }
+
+    .footer {
+      font-size: 20px;
+    }
+
+    .effects {
+      flex-grow: 1;
+      font-size: 14px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+}

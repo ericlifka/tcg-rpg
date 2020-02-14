@@ -1,11 +1,15 @@
 <div class="player-hand">
 
-  <div class="card nature">
-    <div class="header">New Recruits</div>
-    <div class="effects">
-      <button class="effect">🍃: Summon a 1/1 elf</button>
+  {{#each @cards as |card|}}
+    <div class="card {{card.color}}">
+      <div class="header">{{card.name}}</div>
+      <div class="effects">
+        {{#each card.effects as |effect|}}
+          <button class="effect">{{effect}}</button>
+        {{/each}}
+      </div>
+      <button class="footer">{{color-symbol card.color}}</button>
     </div>
-    <button class="footer">🍃</button>
-  </div>
+  {{/each}}
 
 </div>

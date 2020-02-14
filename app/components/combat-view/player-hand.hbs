@@ -3,11 +3,7 @@
   {{#each @cards as |card|}}
     <div class="card {{card.color}}">
       <div class="header">{{card.name}}</div>
-      <div class="effects">
-        {{#each card.effects as |effect|}}
-          <button class="effect">{{effect}}</button>
-        {{/each}}
-      </div>
+      <button class="effect">{{card.effect}}</button>
       <button class="footer">{{color-symbol card.color}}</button>
     </div>
   {{/each}}

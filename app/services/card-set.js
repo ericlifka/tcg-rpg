@@ -7,7 +7,7 @@ const baseSet = [
   { id: 0
   , instanceId: null
   , name: "New Recruits"
-  , effects: [ `${ManaIcons[Color.Nature]}: Summon a 1/1 elf` ]
+  , effect: `${ManaIcons[Color.Nature]}: Summon a 1/1 elf`
   , color: Color.Nature
   }
 ];

@@ -4,6 +4,9 @@
   </div>
   <div class="sidebar">
     <CombatView::ManaDisplay @mana={{this.playerManaPool}} />
-    <CombatView::PlayerHand @cards={{this.playerHand}} />
+    <CombatView::PlayerHand
+            @cards={{this.playerHand}}
+            @play={{this.playCard}}
+            @salvage={{this.salvageCard}} />
   </div>
 </div>

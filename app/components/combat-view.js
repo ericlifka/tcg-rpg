@@ -29,7 +29,8 @@ export default class CombatViewComponent extends Component {
   }
 
   @action salvageCard(card) {
-    console.log('salvageCard', card);
+    this.playerManaPool[ card.color ]++;
+    this.playerHand = this.playerHand.filter(({instanceId}) => instanceId !== card.instanceId);
   }
 
 }

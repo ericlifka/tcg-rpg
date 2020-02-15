@@ -1,41 +1,13 @@
-<div class="combat-grid">
+<div class="combat-grid {{renderSize}}">
   <div class="board">
     <div class="row"><div class="end-zone">20</div></div>
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
+    {{#each @grid as |row|}}
+      <div class="row">
+        {{#each row as |cell|}}
+          <div class="square">{{cell.x}},{{cell.y}}</div>
+        {{/each}}
+      </div>
+    {{/each}}
     <div class="row"><div class="end-zone">20</div></div>
   </div>
 </div>
